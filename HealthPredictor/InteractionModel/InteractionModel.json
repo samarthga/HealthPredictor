@@ -1,0 +1,127 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "MyHealthScoreAgeIntent",
+      "samples": [
+        "{Age} years old",
+        "I am {Age} years old.",
+        "{Age}",
+        "{Age} years"
+      ],
+      "slots": [
+        {
+          "name": "Age",
+          "type": "AMAZON.NUMBER",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "MyHealthScoreGenderIntent",
+      "samples": [
+        "{Gender}",
+        "My sex is {Gender}",
+        "My gender is {Gender}",
+        "I am a {Gender}"
+      ],
+      "slots": [
+        {
+          "name": "Gender",
+          "type": "Gender",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "MyHealthScoreGraduateIntent",
+      "samples": [
+        "{Graduate} did graduate",
+        "{Graduate} I did graduate",
+        "{Graduate}",
+        "{Graduate} I did not"
+      ],
+      "slots": [
+        {
+          "name": "Graduate",
+          "type": "NoYes",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "MyHealthScoreSmokerIntent",
+      "samples": [
+        "{Smoker} I do smoke",
+        "{Smoker} I don't smoke"
+      ],
+      "slots": [
+        {
+          "name": "Smoker",
+          "type": "NoYes",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "MyHealthScoreStartIntent",
+      "samples": [
+        "Get my health score",
+        "I want to know my health score",
+        "Open Health Score Predictor"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "Gender",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "Male",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Female",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "NoYes",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "No",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Yes",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
